@@ -1,0 +1,31 @@
+📌 Shoep Website: System Overview
+
+🔴 Guest Users
+✅ Can browse all products, view images, colors, and reviews.
+✅ Can register or log in to access more features.
+
+🔴 Registered Users
+✅ Can add products to cart and place orders.
+✅ Can view order history and update their profile.
+
+🔴 Admin Panel
+✅ Admin can manage products (add, edit, delete).
+✅ Admin can view all user orders and update their statuses and delete them.
+
+🔴️ Frontend (React.js + Redux + Tailwind CSS)
+✅ Displays products, cart, and user information.
+✅ Manages state using Redux.
+✅ Sends API requests to the backend.
+
+🔴 Backend (Node.js + Express.js)
+✅ Handles authentication (JWT for security).
+✅ Provides RESTful API endpoints for users, products, and orders.
+✅ Manages business logic and order processing.
+
+🔴 Database (MongoDB)
+✅ Stores user data, product details, and order history.
+✅ Ensures data persistence and retrieval.
+
+🔴 Client-Server Communication
+✅ Uses RESTful APIs for data exchange.
+✅ JWT Authentication secures user sessions.

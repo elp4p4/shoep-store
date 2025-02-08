@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom base styles */
+@layer base {
+  body {
+    @apply antialiased font-sans;
+  }
+
+  input,
+  button {
+    @apply focus:outline-none focus:ring-2 focus:ring-indigo-500;
+  }
+}
+
+/* Custom components */
+@layer components {
+  .btn-primary {
+    @apply bg-indigo-600 text-white px-6 py-2 rounded-md hover:bg-indigo-700 transition-colors;
+  }
+
+  .form-input {
+    @apply w-full px-3 py-2 border rounded-md focus:ring-2 focus:ring-indigo-500;
+  }
+}
+
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #4f46e5; /* indigo-600 */
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 24px;
+}
+
+.swiper-pagination-bullet {
+  background: #fff;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  background: #4f46e5; /* indigo-600 */
+  opacity: 1;
+}
+
+/* Zoom functionality */
+.swiper-zoom-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-zoom-container > img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 0.3s ease;
+}
+
+/* Double-tap/click hint */
+.swiper-slide-active {
+  cursor: zoom-in;
+}
+
+.swiper-slide-zoomed {
+  cursor: grab;
+}
+
+/* Custom range slider */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #e2e8f0;
+  height: 6px;
+  border-radius: 5px;
+  background-image: linear-gradient(#4f46e5, #4f46e5);
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #4f46e5;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #4f46e5;
+  border-radius: 50%;
+  cursor: pointer;
+}
